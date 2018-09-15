@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_internationalization/language_translator_widget.dart';
 import 'package:flutter_internationalization/locale/app_localizations.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -21,7 +22,17 @@ class MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('Some Title'),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.track_changes), onPressed: () {})
+          IconButton(
+              icon: Icon(Icons.track_changes),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LanguageTranslator(_refresh);
+                    },
+                  ),
+                );
+              })
         ],
       ),
       body: Column(
@@ -40,5 +51,9 @@ class MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
+  }
+
+  _refresh() {
+    setState(() {});
   }
 }

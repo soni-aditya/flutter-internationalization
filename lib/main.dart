@@ -20,6 +20,8 @@ class MyApp extends StatelessWidget {
       //Locale('languageCode','countryCode')
       supportedLocales: [
         Locale("en", ""),
+        Locale("es", ""),
+        Locale("ja", ""),
       ],
       //Dynamic Builder for the title property
       onGenerateTitle: (BuildContext context) =>
