@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_internationalization/locale/localizations.dart';
+import 'package:flutter_internationalization/locale/app_localizations.dart';
 
 /*
 Outer Wrapper which allows us to access all the information in our application.
@@ -48,7 +48,7 @@ And we add the translated text into them.
 3. Now to generate the corresponding dart files by running following command (in this case):
 flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n --no-use-deferred-loading {{path to first .arb file} {path to second .arb file} ......... so on until all the .arb files are covered} lib/{file containing AppLocalizations class}
 
-eg. flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n --no-use-deferred-loading lib/l10n/intl_en.arb lib/l10n/intl_es.arb lib/l10n/intl_ja.arb lib/l10n/intl_messages.arb lib/locale/localizations.dart
+eg. flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n --no-use-deferred-loading lib/l10n/intl_en.arb lib/l10n/intl_es.arb lib/l10n/intl_ja.arb lib/l10n/intl_messages.arb lib/locale/app_localizations.dart
 (In this case)
 
  */
