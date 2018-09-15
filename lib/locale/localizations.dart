@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_internationalization/l10n/messages_all.dart';
 import 'package:intl/intl.dart';
 
 class AppLocalizations {

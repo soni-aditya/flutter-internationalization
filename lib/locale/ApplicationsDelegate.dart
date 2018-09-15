@@ -39,6 +39,16 @@ class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
 }
 
 /*
-we can run following command to generate the .arb file
+1. we can run following command to generate the .arb file
 flutter pub pub run intl_translation:extract_to_arb --output-dir=lib/l10n lib/{file containing AppLocalizations class}
+
+2. Now we create one .arb file for each language we support, 3 in this case.
+And we add the translated text into them.
+
+3. Now to generate the corresponding dart files by running following command (in this case):
+flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n --no-use-deferred-loading {{path to first .arb file} {path to second .arb file} ......... so on until all the .arb files are covered} lib/{file containing AppLocalizations class}
+
+eg. flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n --no-use-deferred-loading lib/l10n/intl_en.arb lib/l10n/intl_es.arb lib/l10n/intl_ja.arb lib/l10n/intl_messages.arb lib/locale/localizations.dart
+(In this case)
+
  */
