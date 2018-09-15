@@ -1,0 +1,15 @@
+{
+  "@@last_modified": "2018-09-15T08:48:25.227749",
+  "title": "Aplicación Meteorológica",
+  "@title": {
+    "description": "The title of the Application.",
+    "type": "text",
+    "placeholders": {}
+  },
+  "buttonText": "Obtener el clima",
+  "@buttonText": {
+    "description": "The text in the Weather button.",
+    "type": "text",
+    "placeholders": {}
+  }
+}
