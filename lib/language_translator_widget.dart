@@ -29,6 +29,7 @@ class _LanguageTranslatorState extends State<LanguageTranslator> {
             _makeInkwellForLanguage('English', 'en'),
             _makeInkwellForLanguage('Spanish', 'es'),
             _makeInkwellForLanguage('Japanese', 'ja'),
+            _makeInkwellForLanguage('Arabic', 'ar'),
           ],
         ),
       ),

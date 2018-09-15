@@ -1,12 +1,12 @@
 {
   "@@last_modified": "2018-09-15T19:50:59.309207",
-  "title": "天気アプリケーション",
+  "title": "تطبيق الطقس",
   "@title": {
     "description": "The title of the Application.",
     "type": "text",
     "placeholders": {}
   },
-  "buttonText": "天気を手に入れよう",
+  "buttonText": "الحصول على الطقس",
   "@buttonText": {
     "description": "The text in the Weather button.",
     "type": "text",
